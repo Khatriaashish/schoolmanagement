@@ -112,7 +112,7 @@ class AuthController{
 
     async getLoggedInUser(req, res, next){
         res.json({
-            result: {}
+            result: req.authUser
         })
     }
 }
